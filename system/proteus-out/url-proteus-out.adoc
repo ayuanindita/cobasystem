@@ -1,0 +1,16 @@
+= System URL Proteus Out
+
+Berikut merupakan environment dari sistem Proteus Out:
+
+|===
+| Environment | URL
+
+| Development
+|
+
+| Staging / UAT
+| https://proteusout.sumpahpalapa.com/
+
+| Production
+| http://proteus-out.konekto.id
+|===

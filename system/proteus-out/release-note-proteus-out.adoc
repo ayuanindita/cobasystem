@@ -1,0 +1,5 @@
+= Release Note Proteus Out
+
+Berikut adalah _link_ untuk melihat rilis note dari sistem Proteus Out:
+
+https://github.com/sepulsa/proteus-out/releases[Release Note]

@@ -1,0 +1,5 @@
+= Developer Onboarding Proteus Out
+
+Berikut adalah langkah - langkah untuk proses _Developer Onboarding_ dalam sistem Proteus Out dapat dilihat pada _link_ dibawah ini:
+
+https://github.com/sepulsa/proteus-out[Langkah - langkah _developer onboarding_ Proteus Out]

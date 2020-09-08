@@ -18,7 +18,7 @@
 <project>
 <modelVersion>4.0.0</modelVersion>
  <groupId>org.alterra.id</groupId>
-    <artifactId>migrasi</artifactId>
+    <artifactId>amigdala</artifactId>
     <version>1</version>
 <build>
   <plugins>
@@ -27,13 +27,13 @@
    <artifactId>asciidoc-confluence-publisher-maven-plugin</artifactId>
      <version>0.10.0</version>
       <configuration>
-        <asciidocRootFolder>system</asciidocRootFolder>
+        <asciidocRootFolder>Amigdala</asciidocRootFolder>
         <sourceEncoding>UTF-8</sourceEncoding> <!-- default -->
         <rootConfluenceUrl>https://alterra.atlassian.net/wiki</rootConfluenceUrl>
         <skipSslVerification></skipSslVerification>
         <maxRequestsPerSecond></maxRequestsPerSecond>
         <spaceKey>SYS</spaceKey>
-        <ancestorId>102596685</ancestorId>
+        <ancestorId>87818807</ancestorId>
         <username>${username}</username> <!-- or read from property -->
         <password>${password}</password> <!-- or read from property -->
         <orphanRemovalStrategy>KEEP_ORPHANS</orphanRemovalStrategy>

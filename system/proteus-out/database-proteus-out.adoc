@@ -1,5 +1,0 @@
-= Database Proteus Out
-
-Berikut adalah _database_ yang digunakan pada sistem Proteus Out:
-
-image::./images-proteus-out/erd-proteus-out.png[ERD Proteus Out]

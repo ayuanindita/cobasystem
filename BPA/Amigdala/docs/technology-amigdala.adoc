@@ -1,0 +1,23 @@
+= Technology Amigdala
+
+Berikut adalah teknologi yang digunakan dalam pengembangan sistem Amigdala:
+
+|===
+| *Spesifikasi* | *Nama* | *Deskripsi*
+
+| *Programming Language*
+| NodeJS (javascript)
+|
+
+| *Framework*
+| FeathersJS {caret}4.5.3
+|
+
+| *Package Manager*
+| Yarn
+|
+
+| *Development Tools*
+| Visual Studio Code (Latest)
+|
+|===

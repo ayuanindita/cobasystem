@@ -1,0 +1,50 @@
+= Amigdala
+:keywords: BPA
+
+== Summary
+
+Amigdala adalah sistem yang digunakan untuk _generate tickets_ secara otomatis pada JIRA, khususnya pada _project_ Tim Operational Alterra.
+Sistem ini dapat _generate tickets_ pada JIRA yang diambil dari beberapa sistem dan _manual input_.
+Sistem ini terintegrasi dengan Sistem Lusca, Sistem Cacabot, dan Sentinel yang disesuaikan dengan kebutuhan.
+_Output_ dari sistem ini adalah _issue_ pada JIRA.
+
+== Informasi Umum
+
+Sistem Amigdala berfungsi sebagai _ticket generator_ pada JIRA Operational Alterra dengan _source_ dari berbagai sistem di Alterra seperti Lusca, dan Cacabot.
+Akan tetapi _issue ticket_ ini juga bisa di-_set_ secara scheduling dengan _setting_ manual pada halaman Sentinel Dashboard.
+
+=== Anggota Tim Amigdala
+
+|===
+| *Name* | *Role* | *Email*
+
+| Arnoldus Lasut
+| Product Owner
+| arnoldus@alterra.id
+
+| Antonius Ananto
+| Development Manager
+| anton@alterra.id
+
+| Somy Andriyanto
+| Lead Software Engineer
+| somy@alterra.id
+
+| Andik Wiko Sumartono
+| Quality Manager
+| andik@alterra.id
+
+| Johanes Paulus
+| Lead Quality Engineer
+| johanes@alterra.id
+|===
+
+== Informasi Teknis
+
+<<docs/url-amigdala.docs#, System URL Amigdala>>
+
+<<docs/architecture-amigdala.docs#, Architecture Amigdala>>
+
+<<docs/technology-amigdala.docs#, Technology Amigdala>>
+
+<<docs/environment-amigdala.docs#, Environment Amigdala>>

@@ -1,0 +1,5 @@
+= Architecture Amigdala
+
+High Level Architecture (HLA) sistem Amigdala masih dalam tahap pengerjaan oleh Tim Architecture.
+
+image::images-amigdala/hla-amigdala.png[HLA Amigdala]

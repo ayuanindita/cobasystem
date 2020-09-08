@@ -1,0 +1,20 @@
+= API Documentation Bonabo
+
+|===
+| *Stage* | *API*
+
+| Development
+| https://bonabo.sepulsa.co.id/apidoc[List public endpoint for partner]
+
+|
+| https://bonabo.sepulsa.co.id/apidoc-priv[List private endpoint:]
+
+|
+| https://www.getpostman.com/collections/28203f859a7ea9c75b0b[POSTMan Collection]
+
+| Production
+| https://bonabo.sepulsa.id/apidoc/[List public endpoint for partner]
+
+|
+| https://bonabo.sepulsa.id/apidoc-priv/[List private endpoint]
+|===

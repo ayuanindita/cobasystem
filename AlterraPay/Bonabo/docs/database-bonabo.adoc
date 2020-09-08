@@ -1,0 +1,9 @@
+= Database Documentation
+
+Berikut merupakan _Entity Relationship Diagram_ (ERD) Bonabo:
+
+image::./images-bonabo/bonabo-erd.png[ERD Bonabo]
+
+Untuk _credential database_ Bonabo, dapat diakses pada link di bawah ini :
+
+https://docs.google.com/spreadsheets/d/1UuYjnI3BK1_3Vm8mleorWUC5gRJGFB0dWrJ5sEIodJc/edit#gid=0

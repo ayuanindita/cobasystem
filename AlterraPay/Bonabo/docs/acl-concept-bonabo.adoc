@@ -1,0 +1,25 @@
+= ACL Concept Bonabo
+
+== Groups
+
+Terdapat 3 group yang ada hingga saat ini:
+
+. Banned
+. Guests
+. Users ( Default )
+
+== Roles
+
+Terdapat 3 Roles dalam Bonabo, yaitu:
+
+. Administrator
+. Merchant
+. Partner
+
+== Permission
+
+ACL permission terbagi menjadi 3 bagian, yaitu:
+
+. Zone = merchant, partner, admin
+. Permission = administrator, operational, report
+. Action = create, edit

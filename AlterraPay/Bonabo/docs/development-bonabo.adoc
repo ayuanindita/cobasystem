@@ -1,0 +1,50 @@
+= Development Bonabo
+
+== Workflow/Gitflow
+
+image::./images-bonabo/bonabo-gitflow.png[Gitflow Bonabo]
+
+== Resolve Conflict & Merge Step
+
+Do:
+
+. Checkout to your branch
+. Create and checkout to new conflict branch for conflict resolve
+. Fetch the origin destination branch you have conflict with
+. Merge destination branch with `git merge <origin/destination_branch> —no-commit —no-ff`
+. Fix conflict.
+ .. Use whatever tools you have.
+I'm using MELD.
+ .. http://meldmerge.org/
+ .. https://gist.github.com/p1nox/6102015
+. RUN TEST AND MAKE SURE IT PASS
+. If dont : Embrace error and find why, this is your branch
+ .. Ask other team members
+ .. Commit your changes, and give a clear message
+. Push your conflict branch
+. Do Pull Request to your destination branch
+. Please check you origin Pull Request, should be closed after your successfully merge conflict branch to destination branch
+
+Dont:
+
+. Never resolve conflict from github page.
+. Never resolve conflict to your own branch.
+
+== Development Step
+
+Dont:
+
+. Create branch from "`development`" branch.
+. Unrelated branch naming.
+. Unclear commit message.
+. Mix task into single task branch.
+
+Do:
+
+. Create new branch with name **+++<pivotal_type>+++/+++<PivotalID>+++-+++<Pivotal_Title>+++** (i.e : feature_159485500_avoid_deadloack, bug_159815016_backup_level) from latest branch pre-release+++</Pivotal_Title>++++++</PivotalID>++++++</pivotal_type>+++
+. Start Pivotal Story
+. Push the branch with commit message **[FINISH#+++<PivotalID>+++] +++<PivotalTitle>+++** to Finish the story+++</PivotalTitle>++++++</PivotalID>+++
+. Create Pull Request to branch *development*
+. If conflict then do Resolve Conflict Merge Instruction Above
+. Accept Pull Request with message **[DELIVER#+++<PivotalID>+++] +++<PivotalTitle>+++**+++</PivotalTitle>++++++</PivotalID>+++
+. Check the Travis Result on https://travis-ci.com/sepulsa/+++<repo_name>++++++</repo_name>+++

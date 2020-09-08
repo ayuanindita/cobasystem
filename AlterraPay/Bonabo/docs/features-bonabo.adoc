@@ -1,0 +1,59 @@
+= Features Bonabo
+
+== Campaign
+
+* Dimiliki oleh suatu partner
+* Bisa terdapat banyak voucher pada satu campaign
+* Aktivasi berdasarkan periode waktu tertentu
+* Expiry time
++
+bersifat dinamis
+
+ ** _Expiry_ berdasarkan static datetime
+ ** _Expiry_ berdasarkan berapa jam (sejak voucher diambil)
+
+== Voucher
+
+* Voucher dimiliki oleh _merchant_
+* Voucher dapat memiliki satu atau lebih kode voucher (_uniqueness_)
+* Uniqueness
+ ** Unique Voucher :
+  *** Voucher dengan satu kode voucher yang bersifat unik
+  *** Hanya bisa dipesan untuk satu _campaign_
+  *** Hanya bisa digunakan satu kali
+ ** Simple Voucher :
+  *** Hanya memiliki satu kode voucher
+  *** Bisa dipesan untuk beberapa campaign
+* Redeemtion
+ ** Offline : Voucher harus di-_redeem_ pada lokasi merchant menggunakan _redeem_ page sepulsa (_codename_: congo).
+ ** Online : Voucher dapat digunakan pada _website merchant_
+* Recycle
+ ** Voucher (kode) dapat didaur ulang secara otomatis jika voucher kedaluwarsa dan belum ditebus
+ ** Untuk
++
+reserved-untaken
++
+voucher, akan didaur ulang jika:
+
+  *** Tidak di-_redeem_
+  *** Voucher final expire redeem exceed *OR* Campaign is not active
+
+ ** Untuk
++
+reserved-taken
++
+voucher, akan didaur ulang jika :
+
+  *** Tidak di-_redeem_
+  *** Diambil melebihi _expired redeem_
+* Dapat memiliki harga jual dalam mata uang atau dalam poin (_after reserved/assigned to a campaign_)
+
+== Short Redeem URL, SMS, Redeem Page
+
+* Hanya digunakan untuk _voucher offline_
+* 3rd party shortener CMS & API
+ ** Menggunakan http://yourls.org/[yourls] CMS and API sebagai shortener service.
+
+== TRI Redeem Page
+
+Untuk partner TRI, diharuskan untuk mengatur redeem_domain (Sebelum membuat campain tertentu) pada https://redeem.sepulsa.id/partner/tri.

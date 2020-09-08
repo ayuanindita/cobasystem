@@ -1,0 +1,60 @@
+= Entities Bonabo
+
+Terdapat empat entitas dalam Bonabo, yaitu:
+
+. Merchant : Entitas yang menerbitkan voucher
+. Partner : Entitas yang memiliki campain, sebagai contoh adalah https://sepulsa.com[sepulsa.com]
+. Voucher
++s
+Berikut merupakan tipe voucher berdasarkan _uniqueness_ dan _redeem type_ voucher.
+
+ ** Voucher Uniqueness
++
+Satu voucher dapat memiliki satu atau lebih kode voucher.
+terdapat dua tipe _uniqueness_:
+
+  ... Simple : Voucher ini hanya memiliki satu kode, namun dapat digunakan berkali-kali.
+  ... Unique : Satu kode dalam _unique voucher_ hanya dapat digunakan satu kali.
+
+ ** Voucher Redeem Type
++
+Terdapat dua tipe voucher berdasarkan penggunaannya:
+
+  ... Offline : Untuk voucher dengan tipe _offline_, _customer_ harus melakukan _redeem voucher_ pada lokasi merchant untuk menggunakan voucher.
+  ... Online : Untuk voucher _online_, customer dapat melakukan _redeem voucher_ secara online pada website _e-commerce_ milik _merchant_.
+
++
+Perbedaan _lifecycle_ voucher _online_ dan _offline_.
++
+|===
+| *Voucher Online* | *Voucher Offline*
+
+| 1.
+Buat Campaign Baru
+| 1.
+Partner memesan voucher pada campaign
+
+| 2.
+Buat Voucher dan Kode
+| 2.
+Partner mengambil voucher yang telah dipesan (dengan informasi terkait kode voucher) dan mendistribusikannya ke customer mereka
+
+| 3.
+Partner memesan voucher pada campaign
+| 3.
+Dibutuhkan kesepakatan secara manual yang harus dilakukan oleh merchant dan pemilik campaign terkait berapa banyak voucher yang digunakan.
+
+| 4.
+Partner mengambil voucher yang terpesan (dengan info URL untuk redeem)
+|
+
+| 5.
+Customer partner melakukan redeem voucher pada situs merchant dengan menggunakan URL redeem
+|
+|===
+
+Berikut ini merupakan halaman yang digunakan untuk _redeem_ _page_ voucher.
+
+https://imanredeem.sepulsa.co.id/?pid=1&cid=46&vt=$2y$10$7Hdu5iqg52ZMjOoHkli0Fu6xwpyIUt1.L7it9njW/sesrxP2fNZBS&otp=d6f868305a4f77c96924b00f4bff63aa191b78ad8e4f40d2619239a3cc51e29a
+
+. Campaign

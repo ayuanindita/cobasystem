@@ -1,0 +1,20 @@
+= Architecture Bonabo
+
+== High Level Architecture
+
+image::./images-bonabo/hla-bonabo.png[HLA Bonabo]
+
+== Related System
+
+|===
+| *System Name* | *Description*
+
+| Terra
+| _Data warehouse_ untuk menyimpan semua data yang digunakan untuk _report_
+
+| Congo
+| _Redeem page_ untuk Bonabo
+
+| Jellydashboard
+| _Dashboard Reporting_ Bonabo untuk Merchant, Partner, dan Internal Sepulsa
+|===

@@ -3,7 +3,7 @@ name: Confluence Publisher
 on:
   push:
      tags: 
-       - 'v*-traditional'                         
+       - 'v*-system'                         
 jobs:
     build:
   
@@ -15,8 +15,13 @@ jobs:
         uses: actions/setup-java@v1       
         with:
           java-version: 1.8               
-      - name: Build with Maven
+    # - name: BPA/Amigdala
+     #   env:
+      #    username: ${{ secrets.USERNAME_ANIN }}
+       #   password: ${{ secrets.PASSWORD_ANIN }}
+        # run: mvn org.sahli.asciidoc.confluence.publisher:asciidoc-confluence-publisher-maven-plugin:publish --file BPA/pom-amigdala.xml -Dusername=$username -Dpassword=$password
+      - name: AlterraPay/Bonabo
         env:
           username: ${{ secrets.USERNAME_ANIN }}
           password: ${{ secrets.PASSWORD_ANIN }}
-        run: mvn org.sahli.asciidoc.confluence.publisher:asciidoc-confluence-publisher-maven-plugin:publish --file BPA/pop-amigdala.xml -Dusername=$username -Dpassword=$password
+        run: mvn org.sahli.asciidoc.confluence.publisher:asciidoc-confluence-publisher-maven-plugin:publish --file AlterraPay/pom-bonabo.xml -Dusername=$username -Dpassword=$password

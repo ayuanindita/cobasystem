@@ -1,0 +1,5 @@
+= Developer Onboarding Bonabo
+
+Berikut dokumentasi _installation setup_ serta tools yang digunakan dalam pengembangan Bonabo:
+
+https://github.com/sepulsa/bonabo/blob/master/readme.md

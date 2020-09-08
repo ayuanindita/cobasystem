@@ -1,0 +1,109 @@
+= Emergency Solution Bonabo
+
+== Takeout Available (Un-reserved) Code
+
+Belum ada fitur, jika ada permintaan _take out_ sejumlah _code_, maka perlu dilakukan manual :
+
+* PASTIKAN BACKUP DB COMPLETE TERLEBIH DAHULU
+* Identifikasi dengan _query_, apakah mencukupi code yang available
+* Jalankan _query_ dan export ke CSV, untuk nantinya diinfokan ke _requester_
+* Buat _query_ _delete_ dengan kondisi yang sama.
+
+[discrete]
+==== Check Available Code
+
+----
+## Voucher ID to takeout
+    set @vid:=4;
+
+    ## Code not reserved
+    select * from voucher_codes
+    where vid=@vid
+    and `code` not in (
+    select cic.code from vouchercode_in_campaign cic
+    inner join ( select * from voucher_codes where vid=@vid ) c on cic.vcid = c.vcid
+    )
+    limit {{TAKEOUT_QTY}};
+----
+
+[discrete]
+==== Delete Available Code (VOUCHER ID menyesuaikan)
+
+----
+## Code not reserved
+    delete from voucher_codes
+    where vid={{vid}}
+    and `code` not in (
+    select cic.code from vouchercode_in_campaign cic
+    inner join ( select * from voucher_codes where vid={{vid}} ) c on cic.vcid = c.vcid
+    )
+    limit {{TAKEOUT_QTY}};
+----
+
+== Ubah Sell Price
+
+Sell Price di-_set_ ketika melakukan `assign/reserve voucher`.
+Untuk saat ini belum ada fitur untuk merubah Sell Price yang sudah terlanjur di-_set_.
+Maka perlu dilakukan manual.
+Diperlukan data berikut :
+
+* Voucher ID
+* Campaign ID
+* Waktu assign dan harga sell pricenya ( karena bisa multi-assign )
+* Berapa nilai Sell Price
+* Berapa nilai Sell Poin
+
+Yang harus dilakukan :
+
+* Ubah data di tabel *voucher_in_campaign* untuk field `hist_assign_price` dalam money value, dan ubah data `hist_assign_point` dalam poin value.
+
+== REPORT : Recon Promo Code
+
+Berikut merupakan _query_ untuk report ini.
+_Query_ terbagi menjadi dua, yaitu _non-recycled_ dan _recycled_:
+
+=== Non-Recycled
+
+----
+select v.vid, v.`title` as voucher_title,
+    	m.name as merchant,
+    	ml.title as redeem_location,
+    	ml.mlcode as merchant_location_code,
+    	c.campid, c.`title` as campaign_title,
+    	p.`name` as partner,
+    	vc.code,
+    	vcc.`trx_id`, vcc.redeem_status, vcc.redeem_date, vcc.taken_status, vcc.taken_date,
+    	IF(vcc.redeem_status IS NULL, "UNRESERVED", IF(vcc.taken_status=1, IF(vcc.redeem_status=1, "REDEEMED", "TAKENED"), "RESERVED")) AS ocupied_status
+    from `voucher_codes` vc
+    	left join `voucher` v on vc.vid = v.vid
+    	left join `vouchercode_in_campaign` vcc on vc.vcid=vcc.vcid
+    	left join campaign c on vcc.`campid`=c.`campid`
+    	left join partner p on c.partnerid=p.`partnerid`
+    	left join merchant m on v.mid=m.mid
+    	left join merchant_location ml on vcc.mlid=ml.mlid
+    -- where vc.vid IN (5,8,13,14)
+    order by v.vid, vcc.taken_status, vcc.redeem_status
+----
+
+=== Recycled
+
+----
+select v.vid, v.`title` as voucher_title,
+    	m.name as merchant,
+    	ml.title as redeem_location,
+    	ml.mlcode as merchant_location_code,
+    	c.campid, c.`title` as campaign_title,
+    	p.`name` as partner,
+    	vc.code,
+    	vcc.`trx_id`, vcc.redeem_status, vcc.redeem_date, vcc.taken_status, vcc.taken_date,
+    	IF(vcc.redeem_status IS NULL, "UNRESERVED", IF(vcc.taken_status=1, IF(vcc.redeem_status=1, "REDEEMED", "TAKENED"), "RESERVED")) AS ocupied_status
+    from `voucher_codes` vc
+    	left join `voucher` v on vc.vid = v.vid
+    	left join `vouchercode_in_campaign` vcc on vc.vcid=vcc.vcid
+    	left join campaign c on vcc.`campid`=c.`campid`
+    	left join partner p on c.partnerid=p.`partnerid`
+    	left join merchant m on v.mid=m.mid
+    	left join merchant_location ml on vcc.mlid=ml.mlid
+    -- where vc.vid IN (5,8,13,14)
+    order by v.vid, vcc.taken_status, vcc.redeem_status
+----

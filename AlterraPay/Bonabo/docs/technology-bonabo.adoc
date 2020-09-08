@@ -1,0 +1,23 @@
+= Technology Bonabo
+
+|===
+| Specification | Name
+
+| OS
+| -
+
+| Web Server
+| NGINX
+
+| Programming Language
+| PHP 7, NPM V.5.5.0
+
+| Framework
+| Drupal, Lumen, React
+
+| DBMS
+| MySQL
+
+| Others
+| Redis
+|===

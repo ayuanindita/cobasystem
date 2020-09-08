@@ -41,10 +41,10 @@ Akan tetapi _issue ticket_ ini juga bisa di-_set_ secara scheduling dengan _sett
 
 == Informasi Teknis
 
-<<docs/url-amigdala.docs#, System URL Amigdala>>
+<<docs/url-amigdala.adoc#, System URL Amigdala>>
 
-<<docs/architecture-amigdala.docs#, Architecture Amigdala>>
+<<docs/architecture-amigdala.adoc#, Architecture Amigdala>>
 
-<<docs/technology-amigdala.docs#, Technology Amigdala>>
+<<docs/technology-amigdala.adoc#, Technology Amigdala>>
 
-<<docs/environment-amigdala.docs#, Environment Amigdala>>
+<<docs/environment-amigdala.adoc#, Environment Amigdala>>

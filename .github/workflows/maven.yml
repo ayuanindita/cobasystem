@@ -19,4 +19,4 @@ jobs:
         env:
           username: ${{ secrets.USERNAME_ANIN }}
           password: ${{ secrets.PASSWORD_ANIN }}
-        run: mvn org.sahli.asciidoc.confluence.publisher:asciidoc-confluence-publisher-maven-plugin:publish --file pom-proteus-out.xml -Dusername=$username -Dpassword=$password
+        run: mvn org.sahli.asciidoc.confluence.publisher:asciidoc-confluence-publisher-maven-plugin:publish --file BPA/pop-amigdala.xml -Dusername=$username -Dpassword=$password

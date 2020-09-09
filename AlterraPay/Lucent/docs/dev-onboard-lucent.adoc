@@ -1,0 +1,50 @@
+= Developer Onboarding Lucent
+
+== Setup
+
+|===
+| Component | Software Name | Resource Link
+
+| CRUD Module
+| -
+| -
+
+| Validation
+| Flask-RESTFUL Request parsing
+| https://flask-restful.readthedocs.io/en/0.3.5/reqparse.html
+
+|
+| Cerberus
+| http://docs.python-cerberus.org/en/stable/index.html
+
+| ORM (Migration & Seeder)
+| Orator
+| https://github.com/sdispater/flask-orator
+
+| JWT auth
+| Flask JWT Extended
+| https://flask-jwt-extended.readthedocs.io/en/latest/index.html
+
+| Testing
+| PyTest
+| https://docs.pytest.org/en/latest/
+|===
+
+== Pre Install
+
+I'm using Ubuntu as development and Debian on production.
+You need to install this package.
+
+`sudo apt install build-essential libssl-dev libffi-dev python-dev python3-dev libmysqlclient-dev`
+
+Sometime you need to change `libmysqlclient-dev` to `default-libmysqlclient-dev`
+
+== Install
+
+. I recommended to setup this app within https://virtualenv.pypa.io/en/stable/ . Clone this repo and install dependencies using `pip`
+
+  > pip install -r requirements.txt
+
+. Prepare your database with empty table and run migration
+
+  > orator migrate --seed -c orator.yaml

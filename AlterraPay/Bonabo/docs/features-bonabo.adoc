@@ -54,6 +54,6 @@ voucher, akan didaur ulang jika :
 * 3rd party shortener CMS & API
  ** Menggunakan http://yourls.org/[yourls] CMS and API sebagai shortener service.
 
-== TRI Redeem Page
+== TRI Redeem Page 
 
 Untuk partner TRI, diharuskan untuk mengatur redeem_domain (Sebelum membuat campain tertentu) pada https://redeem.sepulsa.id/partner/tri.

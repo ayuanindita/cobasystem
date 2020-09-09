@@ -12,7 +12,7 @@
 | Programming Language
 | PHP 7, NPM V.5.5.0
 
-| Framework
+| Framework 
 | Drupal, Lumen, React
 
 | DBMS

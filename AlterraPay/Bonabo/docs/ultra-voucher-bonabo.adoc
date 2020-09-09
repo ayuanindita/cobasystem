@@ -28,7 +28,7 @@ Untuk mengakses database, Anda dapat menghubungi Development Team Bonabo
 
 == Swagger
 
-Swagger for Bonabo is not changed, but some values in parameter will be available for endpoint */token*, field parameter *token* can be filled by *id_voucher* (given from response Ultra Voucher)
+Swagger for Bonabo is not changed, but some values in parameter will be available for endpoint */token*, field parameter *token* can be filled by *id_voucher* (given from response Ultra Voucher) 
 
 == Ultra Voucher
 

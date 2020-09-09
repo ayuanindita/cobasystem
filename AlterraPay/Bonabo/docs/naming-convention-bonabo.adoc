@@ -7,7 +7,7 @@
   *** Main Controller : App\Http\Controllers\Controller.php
   *** Default response format
   *** CRUD controller method
-* Model :
+* Model : 
  ** Model Trait (Common method) : App\Models\ModelTrait atau kadang App\Traits\ModelTrait
  ** CRUD functional method ( List, Create, Edit, Get, Delete, Hooks )
 * Custom Validation

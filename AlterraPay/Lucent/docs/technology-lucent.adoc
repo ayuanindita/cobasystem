@@ -1,0 +1,55 @@
+= Technology Lucent
+
+== Technology Dashboard
+
+|===
+| Environment | Server
+
+| OS
+| -
+
+| Web Server
+| NGINX
+
+| Programming Language
+| Vue JS
+
+| Framework
+| Nuxt JS + Vuetify
+
+| DBMS
+| MongoDB 3.4.20-2.18
+
+| API Gateway
+| Kong 1.2
+
+| Others
+| RabbitMQ 3.7.15
+|===
+
+== Technology API
+
+|===
+| Environment | Server
+
+| OS
+| -
+
+| Web Server
+| NGINX
+
+| Programming Language
+| Go Lang
+
+| Framework
+| Echo with Bxcodec
+
+| DBMS
+| MongoDB 3.4.20-2.18
+
+| API Gateway
+| Kong 1.2
+
+| Others
+| RabbitMQ 3.7.15
+|===

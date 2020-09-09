@@ -14,9 +14,9 @@ jobs:
       - name: Set up JDK 1.8              
         uses: actions/setup-java@v1       
         with:
-          java-version: 1.8               
-      - name: BPA/Amigdala
+          java-version: 1.8              
+      - name: AlterraPay/Bonabo
         env:
           username: ${{ secrets.USERNAME_ANIN }}
           password: ${{ secrets.PASSWORD_ANIN }}
-        run: mvn org.sahli.asciidoc.confluence.publisher:asciidoc-confluence-publisher-maven-plugin:publish --file BPA/pom-amigdala.xml -Dusername=$username -Dpassword=$password
+        run: mvn org.sahli.asciidoc.confluence.publisher:asciidoc-confluence-publisher-maven-plugin:publish --file AlterraPay/pom-bonabo.xml -Dusername=$username -Dpassword=$password

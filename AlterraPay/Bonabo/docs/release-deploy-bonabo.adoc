@@ -1,0 +1,53 @@
+= Release and Deployment Bonabo
+
+== Release
+
+=== Production Release Step (API)
+
+Dont:
+
+. Do not create Pull Request after task accepted by QA.
+. Do not merge PR to "`pre-release`" without confirmation to person who create release.
+. Unprotected branch "`master`" and "`pre-release`".
+
+Do:
+
+. Each SE (Software Engineer) should create Pull Request to to "`pre-release`" branch AFTER THE TASK IS ACCEPTED BY QA.
+. A.S.A.P for no.1
+. Release Person, must build and create a release notes for each task ready for release.
+ .. At minimal a full day before release schedule, release must be done
+ .. Check all PR
+ .. Merge PR task one-by-one to "`pre-release`"
+ .. If there's conflict : resolve it.
+If you're not sure, coordinate with SE who work for those task.
+ .. After all successfully merged into "`pre-release`" : Create RELEASE DRAFT on github.
+Mark a tag for version number : 1.x.x ( major, medium, single-task )
+ .. Finalize release from step 5
+ .. Do PR from "`pre-release`" to "`master`" branch
+ .. WARNING : ALL PR MERGED INTO MASTER WILL BE RELEASED TO PRODUCTION (except for some repo, i.e : Terra)
+
+=== Production Release Step (Terra-UI)
+
+Do:
+
+. Each SE (Software Engineer) should create Pull Request to UI* branch ( i.e : bonabo-ui, meowth-ui ) AFTER THE TASK IS ACCEPTED BY QA.
+. A.S.A.P for no.1
+. Release Person, must build and create a release notes for each task ready for release.
+. Merge one-by-one into UI* branch
+. Merge each UI* branch with latest origin/master
+. Create PR from UI* branch to "`master`" and put a clear release note in every PR
+. Coordinate with Bayu (Data Team), or other person who can handle deployment with Terra
+
+=== Development & UAT Release
+
+. All step are equal for previouse release guide
+. Except:
+ .. Did not need to create Tag release
+ .. Merge into "`development`" branch to deploy into development server
+ .. Merge into "`pre-release`" branch to deploy into UAT/Staging server
+
+== Deployment
+
+Jadwal deployment bersifat tentatif.
+Rilis seharusnya di-_deploy_ sebelum _Sprint Review_.
+Jika hal tersebut tidak memungkinkan, rilis harus di-_deploy_ pada _sprint_ berikutnya.

@@ -1,0 +1,41 @@
+= Environment Bonabo
+
+|===
+| Environment | Server | Link
+
+| Development
+| Host
+| https://bonabo.sepulsa.co.id
+
+|
+| IP Address
+| 52.77.96.118
+
+|
+| Project Directory
+| /sepulsa/www/iman/bonabo
+
+| Staging/UAT
+| Host
+| https://bonabo-uat.sepulsa.co.id
+
+|
+| IP Address
+| 52.74.229.93
+
+|
+| Project Directory
+| /sepulsa//www/bonabo
+
+| Production
+| Host
+| https://bonabo.sepulsa.co.id
+
+|
+| IP Address
+| 52.220.239.102
+
+|
+| Project Directory
+| /sepulsa//www/bonabo
+|===

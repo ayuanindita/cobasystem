@@ -1,0 +1,86 @@
+= Bonabo
+:keywords: alterrapay,payment-systems
+
+== Overview
+
+Bonabo bekerja sebagai Voucher Management Service.
+Penamaan Bonabo berasal dari kata Bonobo, nama lain dari _Pygmy Chimpanzee_. 
+Sebagaimana Kraken, Bonabo dikembangkan untuk membuat sistem yang terpisah dari Pronghorn.
+Sistem ini bertugas untuk mengatur voucher baik _online_ maupun _offline_.
+Beberapa fitur yang terdapat di Bonabo di antaranya adalah:
+
+* Voucher : Mengatur voucher _online_ dan _offline_
+* Campaign : Mengatur _campaign_ (informasi terkait aktivitas promosi partner yang terkait dengan voucher)
+* Voucher Redeem : Tipe-tipe _redeem_ voucher
+* Partner : Mengatur pihak-pihak (_partner_) yang mengadakan _campaign_
+* Merchant : Mengatur pihak-pihak (_merchant_) yang menerbitkan _voucher_
+
+Untuk mengatur entitas-entitas tersebut, Bonabo memiliki user internal untuk Sepulsa.
+Bonabo memiliki _redeem page_ untuk _redeem voucher online_ yang dinamakan *Congo* dan dasbor untuk _partner_ dan _merchant_ yang bernama *Jellydashboard*.
+
+=== Team Involved
+
+|===
+| Name | Role | Email
+
+| Bondan Ari Bowo
+| Product Owner
+| bondan@alterra.id
+
+| Evan Sujanto
+| Development Manager
+| evan@alterra.id
+
+| Rosa Imantoro
+| Lead Developer
+| iman@alterra.id
+
+| Etik Insani Zebua
+| Lead Quality Engineer
+| sani@alterra.id
+
+| Budiyanto
+| Ex Lead System Analyst
+| budiyanto@alterra.id
+|===
+
+== Technical Information
+
+<<docs/url-bonabo.adoc#, System URL Bonabo>>
+
+<<docs/architecture-bonabo.adoc#, Architecture Bonabo>>
+
+<<docs/technology-bonabo.adoc#, Technology Bonabo>>
+
+<<docs/environment-bonabo.adoc#, Environment Bonabo>>
+
+<<docs/database-bonabo.adoc#, Database Bonabo>>
+
+<<docs/release-deploy-bonabo.adoc#, Release & Deployment Bonabo>>
+
+<<docs/bonabo-for-voucher-bonabo.adoc#, Ultra Voucher Bonabo>>
+
+== Onboarding Information
+
+<<docs/dev-onboard-bonabo.adoc#, Developer Onboarding Bonabo>>
+
+<<docs/development-bonabo.adoc#, Development Bonabo>>
+
+<<docs/naming-convention-bonabo.adoc#, System URL Bonabo>>
+
+== Documentation
+
+<<docs/api-doc-convention-bonabo.adoc#, API Documentation Bonabo>>
+
+https://github.com/sepulsa/bonabo/releases[Release Note Bonabo]
+
+
+https://docs.google.com/spreadsheets/u/1/d/1fYQnK85o_9pexnj_yno7ebi58z971Y3LH_7dwMfMYNE/edit#gid=2099438809[Functional Requirement Document]
+
+https://xd.adobe.com/view/b26bc345-bcce-43d2-b815-bc105398e153/screen/c3e23c71-a804-4380-8482-ed8cd4eb20ae/OVERVIEW01-2/[Mock Up]
+
+<<docs/acl-concept-bonabo.adoc#, ACL Concept Bonabo>>
+
+<<docs/entities-bonabo.adoc#, Entities Bonabo>>
+
+https://docs.google.com/spreadsheets/d/1UASup5siIGy745SCFb1Q0cVyusw4pTOcy-YlJIGRpZs/edit#gid=756752385[Flow and Wireframe Bonabo]

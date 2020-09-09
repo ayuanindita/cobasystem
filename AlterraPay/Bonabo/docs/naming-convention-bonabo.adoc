@@ -1,0 +1,16 @@
+= Naming Convention Bonabo
+
+== Lumen Framework
+
+* Common MVC
+ ** Controller :
+  *** Main Controller : App\Http\Controllers\Controller.php
+  *** Default response format
+  *** CRUD controller method
+* Model : 
+ ** Model Trait (Common method) : App\Models\ModelTrait atau kadang App\Traits\ModelTrait
+ ** CRUD functional method ( List, Create, Edit, Get, Delete, Hooks )
+* Custom Validation
+ ** Di App\Validators
+ ** Register di App\Providers\EventServiceProvider.php
+ ** Message language terdapat pada resources\lang\en\validation.php

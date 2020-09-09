@@ -1,0 +1,16 @@
+= *Convention*
+:--[no-]html-to-native:
+:author: “Ayu Anindita”
+:date: “2020-03-14”
+:document type: “6”
+:summary: Dokumen ini berisi informasi *convention* sistem Lucent
+
+== *Endpoint URL*
+
+* _API resources_ harus _routed under/api uri_.
+* https://restfulapi.net/versioning/[*URI Versioning*]
+
+== *Code File*
+
+Lucent dikembangkan menggunakan _Go web framework_.
+https://github.com/labstack/echo[*Labstack/Echo*]

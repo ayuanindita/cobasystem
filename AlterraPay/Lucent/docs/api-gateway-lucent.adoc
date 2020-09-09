@@ -1,0 +1,3 @@
+=  API Gateway Lucent
+
+Lucent memiliki API _Gateway_ (menggunakan Kong) untuk memproses dasbor URI dan _endpoint_ API Lucent.

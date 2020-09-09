@@ -1,0 +1,69 @@
+= Lucent
+:keywords: alterrapay,payment-systems
+
+== Overview
+
+Lucent adalah layanan yang memungkinkan _User_ untuk mencairkan pembayaran ke beberapa rekening bank di Indonesia dengan aman dan mudah, menggunakan UI dasbor dan API terintegrasi.
+_Merchant_ harus terhubung dengan Lucent untuk mendapatkan layanan daftar kode bank untuk menangani pembayaran _User_.
+
+Untuk tujuan standardisasi dan mencegah kesalahpahaman, berikut ketentuan yang digunakan dalam dokumentasi ini:
+
+. *_Partner/Client_*: _User_ utama layanan Lucent.
+Partner akan diberikan akses ke API Iris dan Portal _Partner_.
+. *_Creator_*: _Partner_/_client_ yang dapat melakukan pembayaran.
+. *_Approver_*: _Partner/client_ yang dapat menyetujui pembayaran.
+. *_Beneficiary_*: Akun tujuan tempat pembayaran atau transfer dimaksudkan.
+
+== Team Involved
+
+|===
+| Name | Role | Email
+
+| Bondan Ari Bowo
+| Product Owner
+| bondan@alterra.id
+
+| Evan Sujanto
+| Development Manager
+| evan@alterra.id
+
+| Rosa Imantoro
+| Lead Developer
+| iman@alterra.id
+
+| Etik Insani Zebua
+| Lead Quality Engineer
+| sani@alterra.id
+
+| Budiyanto
+| Ex Lead System Analyst
+| budiyanto@alterra.id
+|===
+
+=== *Technical Information*
+
+<<docs/url-lucent.adoc#, System URL Lucent>>
+
+<<docs/architecture-lucent.adoc#, Architecture Lucent>>
+
+<<docs/technology-lucent.adoc#, Technology Lucent>>
+
+<<docs/database-lucent.adoc#, Database Lucent>>
+
+<<docs/release-deploy-lucent.adoc#, Release and Deployment Lucent>>
+
+<<docs/flow-wire-lucent.adoc#, Flow and Wireframe Lucent>>
+
+== *Onboarding Information*
+
+<<docs/dev-onboard-lucent.adoc#, Developer Onboarding Lucent>>
+
+<<docs/development-lucent.adoc#, Development Lucent>>
+
+<<docs/naming-convention-lucent.adoc#, Naming Convention Lucent>>
+
+== *Documentation*
+
+<<docs/api-gateway-lucent.adoc#, API Gateway Lucent>>
+
+https://docs.google.com/document/d/1Y6kC3NZYWFzspG-J6Q1mfC9LSrEE7BNcgj6KbczBuOw/edit[*Lucent Technical Documentation*]

@@ -1,0 +1,17 @@
+= System URL Lucent
+
+|===
+| Component | Environment | URL
+
+| Lucent Dashboard
+| Development
+| http://103.117.207.52:6002/
+
+|
+| Stagging
+| http://103.117.207.52:6002/
+
+|
+| Production
+| -
+|===

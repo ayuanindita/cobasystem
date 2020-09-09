@@ -1,0 +1,82 @@
+= Release and Deployment Lucent
+
+== Production Release Step
+
+=== Do
+
+. Each SE (Software Engineer) should create Pull Request to to "`pre-release`" branch AFTER THE TASK IS ACCEPTED BY QA.
+. A.S.A.P for no.1
+. Release Person, must build and create a release notes for each task ready for release.
+ .. At minimal a full day before release schedule, release must be done
+ .. Check all PR
+ .. Merge PR task one-by-one to "`pre-release`"
+ .. If there's conflict : resolve it.
+If you're not sure, coordinate with SE who work for those task
+ .. After all successfully merged into "`pre-release`" : Create RELEASE DRAFT on github.
+Mark a tag for version number : 1.x.x ( major, medium, single-task )
+ .. Finalize release from step 5
+ .. Do PR from "`pre-release`" to "`master`" branch
+ .. WARNING : ALL PR MERGED INTO MASTER WILL BE RELEASED TO PRODUCTION (except for some repo, i.e : Terra)
+
+=== Don't
+
+. Did not create Pull Request after task accepted by QA.
+. Do not merge PR to "`pre-release`" without confirmation to person who create release.
+. Unprotected branch "`master`" and "`pre-release`".
+
+== Production Release Step : Terra
+
+=== *D
+
+. Each SE (Software Engineer) should create Pull Request to UI* branch ( i.e : piggybank-ui, meowth-ui ) AFTER THE TASK IS ACCEPTED BY QA
+. A.S.A.P for no.
+1
+. Release Person, must build and create a release notes for each task ready for release
+. Merge one-by-one into UI* branch
+. Merge each UI* branch with latest origin/master
+. Create PR from UI* branch to "`master`" and put a clear release note in every PR
+. Coordinate with Bayu (Data Team), or other person who can handle deployment with Terra
+
+== Development Release
+
+=== Do
+
+. Each Software Engineer (SE) should create a pull request (PR) to the "development" branch after the task is accepted by QA.
+. ASAP for step 1
+. Build and create release notes for each task that is ready for release.
+ .. The release must be done no later than one day before the release schedule.
+ .. Check all PR.
+ .. Merge PR task one by one to "development" branch.
+ .. In the event of a conflict, resolve the conflict.
+If you are not sure, coordinate with the SE who works on the task.
+
+== UAT/Release
+
+=== Do
+
+. Each Software Engineer (SE) should create a pull request (PR) to the "pre-release" branch after the task is accepted by QA.
+. ASAP for step 1
+. Build and create release notes for each task that is ready for release.
+ .. The release must be done *no later than one day before the release schedule*.
+ .. Check all PR.
+ .. Merge PR task one by one to "pre-release" branch.
+ .. In the event of a conflict, resolve the conflict.
+If you are not sure, coordinate with the SE who works on the task.
+
+== Development and UAT Release
+
+=== Do
+
+. All step are equal for previous release guide
+. Except:
+ .. Did not need to create Tag release
+ .. Merge into "`development`" branch to deploy into development server
+ .. Merge into "`pre-release`" branch to deploy into UAT/Staging server.
+
+== Deployment
+
+=== Jadwal Deployment
+
+Untuk jadwal deployment bersifat tentatif.
+Rilis seharusnya di-deploy sebelum *sprint review*.
+Jika hal tersebut tidak memungkinkan, rilis harus di-deploy pada sprint berikutnya.

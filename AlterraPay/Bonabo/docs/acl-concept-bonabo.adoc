@@ -4,9 +4,9 @@
 
 Terdapat 3 group yang ada hingga saat ini:
 
-. Banned
-. Guests
-. Users ( Default )
+* Banned
+* Guests
+* Users ( Default )
 
 == Roles
 

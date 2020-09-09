@@ -3,8 +3,6 @@
 
 == Overview
 
-
-
 Bonabo bekerja sebagai Voucher Management Service.
 Penamaan Bonabo berasal dari kata Bonobo, nama lain dari _Pygmy Chimpanzee_.
 Sebagaimana Kraken, Bonabo dikembangkan untuk membuat sistem yang terpisah dari Pronghorn.

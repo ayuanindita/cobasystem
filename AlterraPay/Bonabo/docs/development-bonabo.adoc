@@ -2,7 +2,7 @@
 
 == Workflow/Gitflow
 
-image::./images-bonabo/bonabo-gitflow.png[Gitflow Bonabo]
+image::./images-bonabo/gitflow-bonabo.png[Gitflow Bonabo]
 
 == Resolve Conflict & Merge Step
 

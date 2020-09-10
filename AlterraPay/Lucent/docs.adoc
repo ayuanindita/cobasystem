@@ -67,3 +67,5 @@ Partner akan diberikan akses ke API Iris dan Portal _Partner_.
 <<docs/api-gateway-lucent.adoc#, API Gateway Lucent>>
 
 https://docs.google.com/document/d/1Y6kC3NZYWFzspG-J6Q1mfC9LSrEE7BNcgj6KbczBuOw/edit[*Lucent Technical Documentation*]
+
+<<docs/adr-doc-lucent.adoc#, ADR Document Lucent>>

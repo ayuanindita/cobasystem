@@ -1,0 +1,11 @@
+= Document ADR Lucent
+
+
+The documents below are the history of all decisions applied by the development team based on the exploration
+
+
+|===
+|*Document Title* |*Remark/Explanation*
+| <<adr-doc-lucent/0001-adr-decision-1-lucent.adoc#, [ADR-0001] Decision 1 Lucent  >> |Template ADR
+|Next Decision | 
+|===

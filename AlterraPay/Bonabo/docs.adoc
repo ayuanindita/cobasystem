@@ -58,7 +58,7 @@ Bonabo memiliki _redeem page_ untuk _redeem voucher online_ yang dinamakan *Cong
 
 <<docs/release-deploy-bonabo.adoc#, Release & Deployment Bonabo>>
 
-<<docs/bonabo-for-voucher-bonabo.adoc#, Ultra Voucher Bonabo>>
+<<docs/ultra-voucher-bonabo.adoc#, Ultra Voucher Bonabo>>
 
 == Onboarding Information
 

@@ -70,7 +70,7 @@ Bonabo memiliki _redeem page_ untuk _redeem voucher online_ yang dinamakan *Cong
 
 == Documentation
 
-<<docs/api-doc-convention-bonabo.adoc#, API Documentation Bonabo>>
+<<docs/api-doc-bonabo.adoc#, API Documentation Bonabo>>
 
 https://github.com/sepulsa/bonabo/releases[Release Note Bonabo]
 
